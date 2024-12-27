@@ -1,0 +1,32 @@
+@use '../utils/' as u;
+
+.thank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+
+    @include u.breakpoint(medium) {
+        gap: 3.2rem;
+    }
+
+    &__rating {
+        text-align: center;
+        padding: 0.5rem 1.2rem;
+        background-color: var(--dark-blue);
+        border-radius: 2.25rem;
+    }
+
+    &__description {
+        margin-top: -0.7rem;
+        text-align: center;
+
+        @include u.breakpoint(medium) {
+            margin-top: -2.5rem;
+        }
+    }
+
+    &__dismiss-button {
+        align-self: stretch;
+    }
+}

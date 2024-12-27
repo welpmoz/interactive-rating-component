@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./index.css">
+
+  <script defer src="./index.js"></script>
+</head>
+<body class="screen grid">
+
+  <main class="grid__item presentation">
+    <section class="wrapper wrapper--form presentation__item presentation__item--visible" id="form-view">
+      <!-- Rating state start -->
+      <form class="rating-form" id="rating-form">
+        <div class="rating-form__image button button--circle">
+          <img src="./images/icon-star.svg" alt="Small Rating Icon">
+        </div>
+      
+        <h2 class="rating-form__title text-heading color-white">How did we do?</h2>
+      
+        <p class="rating-form__description text-body color-light-grey">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      
+        <div class="rating-form__buttons text-button-1 color-light-grey">
+          <input type="radio" value="1" name="rating" id="rating-1" class="radio radio--rating">
+          <label class="button button--circle button--clickable color-light-grey" for="rating-1">1</label>
+      
+          <input type="radio" value="2" name="rating" id="rating-2" class="radio radio--rating">
+          <label class="button button--circle button--clickable color-light-grey" for="rating-2">2</label>
+      
+          <input type="radio" value="3" name="rating" id="rating-3" class="radio radio--rating">
+          <label class="button button--circle button--clickable color-light-grey" for="rating-3">3</label>
+      
+          <input type="radio" value="4" name="rating" id="rating-4" class="radio radio--rating">
+          <label class="button button--circle button--clickable color-light-grey" for="rating-4">4</label>
+      
+          <input type="radio" value="5" name="rating" id="rating-5" class="radio radio--rating">
+          <label class="button button--circle button--clickable color-light-grey" for="rating-5">5</label>
+        </div>
+      
+        <button class="button button--rectangle text-button-2 color-very-dark-blue" type="submit">Submit</button>
+      </form>
+      <!-- Rating state end -->
+    </section>    
+    
+    <section class="wrapper wrapper--thank presentation__item presentation__item--hidden" id="thank-view">
+      <!-- Thank you state start -->
+      <div class="thank">
+        <img class="thank__image" src="./images/illustration-thank-you.svg" alt="Rating Registration in Phone">
+        
+        <span class="thank__rating text-body color-orange">You selected <span id="rating-selected"></span> out of 5</span>
+        
+        <h2 class="thank__title text-heading color-white">Thank you!</h2>
+        
+        <p class="thank__description text-body color-light-grey">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+
+        <button class="button button--rectangle text-button-2 color-very-dark-blue thank__dismiss-button" type="button" id="dismiss-button">Dismiss Message</button>
+      </div>
+      <!-- Thank you state end -->
+    </section>
+  </main>
+</body>
+</html>

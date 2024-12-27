@@ -1,0 +1,67 @@
+@use '../utils/' as u;
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('./fonts/Overpass-VariableFont_wght.ttf');
+}
+
+:root {
+    font-family: 'Overpass', serif;
+    font-size: 62.5%;
+    font-optical-sizing: auto;
+}
+
+.text-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0rem;
+    transition: font-size 0.3s ease-out;
+
+    @include u.breakpoint(medium) {
+        font-size: 2.8rem;
+    }
+}
+
+.text-body {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0rem;
+    transition:
+        font-size 0.3s ease-out,
+        line-height 0.3s ease-out;
+
+    @include u.breakpoint(medium) {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+}
+
+.text-button-1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0.017rem;
+    transition:
+        font-size 0.3s ease-out,
+        letter-spacing 0.3s ease-out;
+
+    @include u.breakpoint(medium) {
+        font-size: 1.6rem;
+        letter-spacing: 0.02rem;
+    }
+}
+
+.text-button-2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.187rem;
+    transition:
+        font-size 0.3s ease-out,
+        letter-spacing 0.3s ease-out;
+
+    @include u.breakpoint(medium) {
+        font-size: 1.5rem;
+        letter-spacing: 0.02rem;
+    }
+}

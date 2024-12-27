@@ -1,0 +1,21 @@
+:root {
+    --dark-blue: #262E38;
+    --light-grey: #969FAD;
+    --orange: #FC7614;
+    --white: #FFFFFF;
+    --very-dark-blue: #131518;
+}
+
+$colors: (
+    "dark-blue": var(--dark-blue),
+    "light-grey": var(--light-grey),
+    "orange": var(--orange),
+    "white": var(--white),
+    "very-dark-blue": var(--very-dark-blue),
+);
+
+@each $name, $color in $colors {
+    .color-#{$name} {
+        color: $color;
+    }
+}
