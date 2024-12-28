@@ -1,6 +1,8 @@
 @use '../utils/' as u;
 
 .button {
+    outline: none;
+
     &--circle {
         border-radius: 50%;
         background-color: var(--dark-blue);
@@ -26,7 +28,8 @@
         transition: all 0.3s ease-out;
         will-change: cursor, background-color, color, width, height;
 
-        &:hover {
+        &:hover,
+        &:focus {
             cursor: pointer;
             background-color: var(--orange);
             color: var(--dark-blue);
@@ -39,7 +42,6 @@
     }
 
     &--rectangle {
-        outline: none;
         border: none;
         padding: 1.5rem 0.5rem 1.1rem 0.5rem;
         text-align: center;
@@ -50,7 +52,8 @@
             cursor 0.3s ease-out,
             background-color 0.3s ease-out;
 
-        &:hover {
+        &:hover,
+        &:focus {
             cursor: pointer;
             background-color: var(--white);
         }

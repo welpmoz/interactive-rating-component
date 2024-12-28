@@ -49,6 +49,8 @@ Your users should be able to:
 
 ### What I learn
 
+- I learn accessibility concepts and apply in my solution.
+
 ### Built with
 
 - Semantic HTML5 markup
